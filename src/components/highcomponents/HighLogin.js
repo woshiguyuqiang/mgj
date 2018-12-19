@@ -14,7 +14,7 @@ let login =(Mine,Login)=>{
 			if(flag){
 				return(
 				<div>
-					<Mine />
+					<Mine histort={this.props.history}/>
 				</div>	
 				)
 			}else{

@@ -5,13 +5,18 @@ import Index from "./components/Index"
 import SearPage from "./components/search/SearPage"
 import SearchList from "./components/search/SearchList"
 import Main from './components/login/Mian'
+import Register from './components/Register'
 import Qq from './components/login/Qq'
 import Wechat from './components/login/Wechat'
 import Zhang from './components/login/Zhang'
+import Loadable from 'react-loadable'
 import GoodsList from './components/common/GoodsList'
 import dir from './directive/dir'
 import Video from './components/Video'
-
+/* const Index = Loadable({
+	loader:()=>import("./components/Index"),
+	loading:"News"
+}) */
 class App extends Component {
   render() {
     return (
@@ -27,8 +32,9 @@ class App extends Component {
 					<Route path="/qq" component={Qq}/>
 					<Route path="/wechat" component={Wechat}/>
 					<Route path="/zhang" component={Zhang}/>
-					<Route path="/goodslist" component={GoodsList}/>
+					<Route path="/goodslist/:id" component={GoodsList}/>
 					<Route path="/video" component={Video}/>
+					<Route path="/register" component={Register}/>
 					<Redirect to="/index"/>
 				</Switch>
 			</Fragment>

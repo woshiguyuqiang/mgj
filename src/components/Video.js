@@ -12,10 +12,10 @@ export default class Video extends Component{
 		return(
 			<div className="video">
 				<div className="videohead">
-						<NavLink to="/video/hot">热门</NavLink>
-						<NavLink to="/video/cd">穿搭</NavLink>
-						<NavLink to="/video/snew">上新</NavLink>
-						<NavLink to="/video/mei">美妆</NavLink>
+						<NavLink to="/video/hot" replace>热门</NavLink>
+						<NavLink to="/video/cd" replace>穿搭</NavLink>
+						<NavLink to="/video/snew" replace>上新</NavLink>
+						<NavLink to="/video/mei" replace>美妆</NavLink>
 				</div>
 				<div className="videocon">
 					<Switch>

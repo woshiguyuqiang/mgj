@@ -35,7 +35,6 @@ class Home extends Component{
 	}
 }
 const mapStateToProps = (state)=>({
-	val:state.home.n,
 	list:state.home.list
 })
 const mapDispatchToProps = (dispatch)=>({

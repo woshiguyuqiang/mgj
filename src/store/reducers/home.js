@@ -5,7 +5,6 @@ const defaultState={
 	conent:[]
 }
 export default (state=defaultState,action)=>{
-	
 	switch(action.type){
 		case 'HOME_DATA_FULFILLED':
 			let newState = JSON.parse(JSON.stringify(state))

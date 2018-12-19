@@ -91,7 +91,6 @@ class Shop extends Component{
 		
 	}
 	render(){
-		console.log(this.props.list)
 		let {list} = this.state;
 		return(
 			<div className="shop">
@@ -174,7 +173,7 @@ class Shop extends Component{
 					{
 						this.props.list.map((item,index)=>{
 							return <li key={index}>
-								<Link to="/goodslist">
+								<Link to={"/goodslist/"+item.iid}>
 									<div>
 										<img src={item.show.img} alt=""/>
 										<span>已售{item.cfav}件</span>

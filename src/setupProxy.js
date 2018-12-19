@@ -8,8 +8,8 @@ module.exports = (app)=>{
 		})
 	),
 	app.use(
-		proxy('/search', {
-			target: 'http://list.meilishuo.com',
+		proxy('/detail', {
+			target: 'http://m.meilishuo.com',
 			pathRewrite: {'^/api' : ''},
 			changeOrigin: true
 		})

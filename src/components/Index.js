@@ -15,7 +15,7 @@ class Index extends Component {
 				<Switch>
 					<Route path="/index/home" component={Home}/>
 					<Route path="/index/shop" component={Shop}/>
-					<Route path="/index/mine" component={HighLogin(Mine,Login)}/>
+					<Route path="/index/mine/:num" replace component={HighLogin(Mine,Login)}/>
 					<Redirect to="/index/home"/>
 				</Switch>
 			</Fragment>

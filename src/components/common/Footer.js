@@ -20,7 +20,7 @@ export default class Footer extends Component{
 				},
 				{
 					title:'我',
-					url:'/index/mine'
+					url:'/index/mine/'+Math.random()
 				}
 			]
 		}

@@ -10,7 +10,7 @@ class ScrollNav extends Component{
 	}
 	render(){
 		return(
-			<div className="swiper-container">
+			<div className="swiper-container" ref="scroll">
 			  <div className="swiper-wrapper">
 					{
 						this.props.list.map((item,index)=>{
@@ -26,7 +26,7 @@ class ScrollNav extends Component{
 	}
 	componentDidMount(){
 		this.props.getDate()
-		var mySwiper = new Swiper('.swiper-container', {
+		new Swiper(this.refs.scroll, {
 				autoplay: {
 				delay: 1000
 				},

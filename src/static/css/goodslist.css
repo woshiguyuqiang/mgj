@@ -18,14 +18,16 @@
 }
 .goodslhead{
 	width: 100%;
-	padding-top: 10px;
 	background-color: #fff;
 	padding: 0 10px;
+	padding-top: 10px;
 	position: relative;
 }
-.goodslhead>span{
-	display: block;
+.goodslhead>a{
 	position: absolute;
+}
+.goodslhead>a>span{
+	display: block;
 	height: 40px;
 	width: 40px;
 	border-radius: 40px;
@@ -36,10 +38,10 @@
 	font-size: 20px;
 	color: #fff;
 }
-.goodslhead>span:nth-child(1){
+.goodslhead>a:nth-child(1){
 	left: 10px;
 }
-.goodslhead>span:nth-child(2){
+.goodslhead>a:nth-child(2){
 	right: 10px;
 }
 .goodslhead>ul{
@@ -56,7 +58,10 @@
 	height: 390px;
 	width: 250px;
 	margin-left: 10px;
-	background-color: blue;
+}
+.goodslhead>ul>li>img{
+	width: 100%;
+	height: 100%;
 }
 .goodslhead>h1{
 	height: 50px;

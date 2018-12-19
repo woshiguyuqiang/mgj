@@ -1,21 +1,28 @@
 import React,{Component} from 'react'
 import '../../static/css/goodslist.css'
+import {connect} from "react-redux"
+import asyncaction from '../../store/actions/asyncaction'
 import {fetch as fetchPolyfill} from 'whatwg-fetch'
-export default class GoodsList extends Component{
+import {Link,NavLink} from "react-router-dom"
+class GoodsList extends Component{
 	render(){
 		return(
 			<div className="goodsl">
 				<div className="goodsnav">快捷导航</div>
 				<div className="goodslhead">
-					<span className="fa fa-angle-left"></span>
-					<span className="fa fa-shopping-cart"></span>
+					<Link to="/index/shop" replace><span className="fa fa-angle-left"></span></Link>
+					<Link to="/index/shop" replace><span className="fa fa-shopping-cart"></span></Link>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
+					{
+						this.props.goodimg.length>0?this.props.goodimg.map((item,index)=>{
+							return <li key={index}>
+										<img src={item} alt=""/>
+							       </li>
+						}):''
+					}
 					</ul>
-					<h1><span>￥</span><span>198.00</span><span><del>￥282.34</del><strong>7折</strong></span></h1>
-					<p>按时大大哇是更换非共和国环境和高科技规划的后果黄金客户挂机发达国家</p>
+					<h1><span>￥</span><span>{this.props.goodinfo.lowPrice}</span><span><del>￥282.34</del><strong>7折</strong></span></h1>
+					<p>{this.props.goodinfo.title}</p>
 					<p>免邮费</p>
 				</div>
 				<ul className="goodsinfor">
@@ -59,4 +66,18 @@ export default class GoodsList extends Component{
 			</div>
 		)
 	}
+	componentDidMount(){
+		this.props.getData(this.props.match.params.id)
+	}
 }
+const mapStateToProps = (state)=>({
+	goodimg:state.shop.goodimg,
+	goodinfo:state.shop.goodinfo
+	
+})
+const mapDispatchToProps = (dispatch)=>({
+	getData(id){
+		asyncaction.goodinfo(dispatch,id)
+	}
+})
+export default connect(mapStateToProps,mapDispatchToProps)(GoodsList)

@@ -4,7 +4,6 @@ import asyncaction from '../../../store/actions/asyncaction'
 import '../../../static/css/find.css'
 class Find extends Component{
 	render(){
-		console.log(this.props.list)
 		return(
 			<ul className="findlist">
 				<li>
