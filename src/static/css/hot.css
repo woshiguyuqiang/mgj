@@ -1,0 +1,21 @@
+.hot{
+	padding: 0 12px;
+}
+.hot>li{
+	height: 236px;
+}
+.hot>li>p{
+	height: 40px;
+	font-size: 14px;
+	color: #4c4c4c;
+}
+.hot>li>p>img{
+	margin-top: 10px;
+	position: relative;
+	z-index: 10;
+	margin-right: 5px;
+}
+.hot>li>img{
+	position: relative;
+	width: 100%;
+}

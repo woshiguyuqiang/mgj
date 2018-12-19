@@ -1,0 +1,36 @@
+.search{
+	height: 44px;
+	width: 100%;
+	border-bottom: 1px solid #e6dde1;
+	padding: 0 18px;
+	display: flex;
+	background-color: #fff;
+	justify-content: space-between;
+	align-items: center;
+}
+.search>div{
+	position: relative;
+	color: #c4c4c4;
+}
+.search>div>i{
+	position: absolute;
+	top: 7px;
+	left:7px;
+	font-size: 15px;
+}
+.search>div>input{
+	border: none;
+	background-color: #eeeeee;
+	border-radius: 3px;
+	padding-left: 30px;
+	width: 259px;
+	height: 29px;
+	outline: none;
+}
+.search>a>i{
+	font-size: 20px;
+	color: #999999;
+}
+.swiper-container{
+	height: 146px;
+}

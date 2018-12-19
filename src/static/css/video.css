@@ -1,0 +1,29 @@
+.video{
+	
+}
+.videohead{
+	height: 44px;
+	width: 100%;
+	border-bottom: 1px solid #ededed;
+	display: flex;
+	line-height: 44px;
+	font-size: 14px;
+	justify-content: space-around;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #fff;
+	z-index: 999;
+}
+.videohead>a{
+	display: block;
+	width: 55px;
+	text-align: center;
+}
+.videohead .active{
+	color: #ff5777;
+	border-bottom: 3px solid #ff5777;
+}
+.videocon{
+	margin-top: 45px;
+}

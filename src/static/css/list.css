@@ -1,0 +1,22 @@
+.list{
+	margin-top: 5px;
+	background-color: #fff;
+}
+.listNav{
+	height: 48px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	font-size: 16px;
+	border-bottom: 1px solid #ededed;
+}
+.listNav>a{
+	display: block;
+	height: 24px;
+	margin-top: 16px;
+	text-decoration: none;
+}
+.listNav>.active{
+	color: #ff84a9;
+	border-bottom: 2px solid #ff5777;
+}

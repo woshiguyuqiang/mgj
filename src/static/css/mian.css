@@ -1,0 +1,59 @@
+.mianhead{
+	height: 43px;
+	width: 100%;
+	border-bottom: 1px solid #cecccd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fafafa;
+}
+.mianhead>a>i{
+	display: block;
+	padding-left: 13px;
+	font-size: 25px;
+}
+.mianhead>p{
+	flex: 1;
+	font-size: 18px;
+	text-align: center;
+}
+.miancon{
+	margin-top: 50px;
+	padding: 0 24px;
+}
+.miancon>p>input{
+	height: 40px;
+	border: none;
+	width: 100%;
+	padding-left: 8px;
+	font-size: 18px;
+	color: #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+}
+.miancon>p:nth-of-type(2){
+	position: relative;
+}
+.miancon>p:nth-of-type(2)>span{
+	display: block;
+	height: 100%;
+	line-height: 40px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.miancon>p:last-child{
+	margin-top: 30px;
+}
+.miancon>p>button{
+	border: none;
+	height: 50px;
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+	background-color: #ff5777;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50px;
+	font-size: 17px;
+}

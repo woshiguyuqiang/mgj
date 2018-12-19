@@ -1,0 +1,19 @@
+.searchleft{
+	background-color: #fff;
+	height: 600px;
+	overflow: scroll;
+}
+.searchleft>li{
+	height: 113px;
+	width: 65px;
+	line-height: 45px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+	padding-top: 24px;	
+}
+.searchleft>li>img{
+	height: 65px;
+	width: 65px;
+	border-radius: 50%;
+}

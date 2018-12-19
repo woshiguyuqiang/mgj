@@ -1,0 +1,32 @@
+.searchshow{
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+.searchshowleft{
+	width: 90px;
+	height: 600px;
+	overflow: scroll;
+	background-color: #f6f6f6;
+}
+.searchshowleft>a{
+	display: block;
+	width: 90px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 13px;
+	text-decoration: none;
+	text-align: center;
+}
+.searchshowright{
+	flex: 1;
+}
+.searchshowleft>.active{
+	color: #fe6080;
+	border: none;
+	background-color: #fff;
+}
+.active>span{
+	padding-left: 10px;
+	border-left: 3px solid #fe6080;
+}

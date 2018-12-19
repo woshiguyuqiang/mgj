@@ -1,0 +1,9 @@
+.searchlist{
+	overflow: hidden;
+}
+.searchlistleft{
+	float: left;
+}
+.searchlistright{
+	float: right;
+}
