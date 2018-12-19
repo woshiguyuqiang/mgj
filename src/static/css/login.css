@@ -1,0 +1,67 @@
+.login{
+	
+}
+.login>p:nth-of-type(1){
+	height: 106px;
+	width: 100%;
+	line-height: 189px;
+	font-size: 25px;
+	text-align: center;
+}
+.login>a>button{
+	border: none;
+	height: 50px;
+	width: 310px;
+	background-color: #09bb07;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	margin-top: 57px;
+	font-size: 17px;
+	border-radius: 50px;
+}
+.login>button>i{
+	margin-right: 10px;
+}
+.login>p:nth-of-type(2){
+	margin-top: 73px;
+}
+.login>p:nth-of-type(2)>span{
+	display: block;
+	margin: 0 auto;
+	width: 20px;
+	height: 2px;
+	background-color: #c5c5c5;
+}
+.login>p:nth-of-type(3){
+	font-size: 14px;
+	text-align: center;
+	margin-top: 43px;
+	color: #999999;
+}
+.login>ul{
+	overflow: hidden;
+	margin-top: 45px;
+	display: flex;
+	justify-content: space-around;
+}
+.login>ul>li{
+	height: 67px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: #666666;
+}
+.login>ul>li>i{
+	height: 40px;
+	width: 40px;
+	border: 1px solid #f0f0f0;
+	text-align: center;
+	line-height: 40px;
+	font-size: 21px;
+	border-radius: 40px;
+}
+.login>ul>li>a{
+	color: #666666;
+}

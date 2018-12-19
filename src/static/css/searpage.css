@@ -1,0 +1,39 @@
+.seartop{
+	height: 43px;
+	width: 100%;
+	border-bottom: 1px solid #f0f0f0;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 14px;
+	padding-right: 7px;
+	align-items: center;
+}
+.seartop>a>i{
+	font-size: 30px;
+	color: #c4c4c4;
+}
+.seartop>input{
+	width: 287px;
+	height: 22px;
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+.seartop>span{
+	font-size: 14px;
+	color: #666666;
+	font-weight: bold;
+}
+.searhis{
+	padding: 0 7px;
+	padding-left: 10px;
+	padding-right: 20px;
+	border-bottom: 2px solid #f9f9f9;
+}
+.searhis>li{
+	height: 34px;
+	line-height: 34px;
+	color: #999999;
+	font-weight: bold;
+	font-size: 13px;
+}

@@ -1,0 +1,84 @@
+.findlist{
+	
+}
+.findlist>li{
+	
+}
+.findhead{
+	height: 70px;
+	padding: 0px 10px;
+	line-height: 70px;
+	overflow: hidden;
+}
+.findhead .findi{
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+.findleft{
+	float: left;
+}
+.findright{
+	float: right;
+	text-align: right;
+}
+.findleft>p:first-child{
+	height: 40px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.findleft>p:last-child{
+	height: 20px;
+	line-height: 30px;
+}
+.findright>p:first-child{
+	height: 40px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.findright>p:last-child{
+	height: 20px;
+	line-height: 30px;
+}
+.findContent{
+	display: flex;
+	justify-content: space-between;
+}
+.findContent>img{
+	height: 200px;
+	width: 32%;
+}
+.findBottom{
+	margin: 0 auto;
+	padding: 10px 0;
+	height: 48px;
+	width: 90%;
+	white-space: nowrap;
+	overflow: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+    width: 0;
+    height: 0;
+}
+.findBottom>span{
+	display: inline-block;
+	padding: 4px;
+	border-radius: 2px;
+	background-color: #f2f3f7;
+	margin-right: 5px;
+}
+.findBottom>span>img{
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+}
+.heng{
+	height: 2px;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #b7b9b5;
+}
