@@ -4,31 +4,37 @@ import {Link} from 'react-router-dom'
 import Search from '../common/Search'
 import ScrollNav from './ScrollNav'
 import {connect} from "react-redux"
-import { CSSTransitionGroup } from 'react-transition-group';
+import {CSSTransition,TransitionGroup} from 'react-transition-group';
 import List from './List'
 import Nav from './Nav'
 import asyncaction from '../../store/actions/asyncaction'
 class Home extends Component{
 	constructor(props) {
 		super(props);
+		this.state={show:true}
 	}
 	render(){
 		return(
 			<div className="home">
-				<div className="header">
-					<span>×</span>
+			<CSSTransition timeout={1000} in={this.state.show} classNames="fade">
+				<div className="header" >
+					<span onClick={this.exit.bind(this)}>×</span>
 					<div>
 						<img src={require('../../static/img/logo.jpg')} alt=""/>
 						<span>App用户可直接打开浏览哦~</span>
 					</div>
 					<strong>打开</strong>
 				</div>
+			</CSSTransition>
 				<Search history={this.props.history}/>
 				<ScrollNav />
 				<Nav />
 				<List />
 			</div>
 		)
+	}
+	exit(){
+		this.setState({show:false})
 	}
 	componentDidMount(){
 		this.props.getData()

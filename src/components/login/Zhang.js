@@ -25,7 +25,7 @@ export default class Zhang extends Component{
 						<p><input type='text' placeholder="密码"/><span className="fa fa-keyboard-o" id="keyb"></span></p>
 						<p><button onClick={this.login}>登录</button></p>
 					</div>
-					<Link to="/register">注册</Link>
+					<p id='reg'><Link to="/register">注册</Link></p>
 				</div>
 			</div>
 		)

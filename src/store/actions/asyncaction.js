@@ -26,11 +26,11 @@ const getScroll = (dispatch)=>{
 		})
 	})
 }
-const getcontent = (dispatch)=>{
+const getcontent = (dispatch,index)=>{
 	dispatch({
 		type:"HOME_CONTENT",
 		payload:new Promise((resolve)=>{
-			fetchJsonp('http://list.meilishuo.com/search?frame=2&page=1&cKey=wap-index&tag=&maxPrice=&minPrice=&fcid=&_mgjuuid=5f9986b8-f4de-4f25-b636-fb601a976c11&trace=0&cpc_offset=0&_=1545138855030')
+			fetchJsonp('http://list.meilishuo.com/search?frame=2&page='+index+'&cKey=wap-index&tag=&maxPrice=&minPrice=&fcid=&_mgjuuid=5f9986b8-f4de-4f25-b636-fb601a976c11&trace=0&cpc_offset=0&_=1545138855030')
 			.then(function(response) {
 				resolve(response.json())
 			}).catch(function(ex) {
@@ -54,6 +54,13 @@ const goodinfo = (dispatch,id)=>{
 		})
 	})
 }
+
+
+
+
+
+
+
 
 const goodtitle = (dispatch)=>{
 	dispatch({

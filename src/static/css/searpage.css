@@ -37,3 +37,34 @@
 	font-weight: bold;
 	font-size: 13px;
 }
+.searhis>li:nth-of-type(1){
+	display: flex;
+	justify-content: space-between;
+}
+.searhis>li:nth-of-type(1)>i{
+	line-height: 34px;
+}
+.searthot{
+	padding: 0 10px;
+}
+.searthot>p{
+	height: 40px;
+	line-height: 40px;
+	color: #999999;
+}
+.searthot>p>i{
+	margin-right: 10px;
+}
+.searthot>ul{
+	overflow: hidden;
+	padding: 0 20px;
+}
+.searthot>ul>li{
+	padding: 5px 12px;
+	border: 1px solid #efebeb;
+	float: left;
+	color: #666666;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}

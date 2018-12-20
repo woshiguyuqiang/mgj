@@ -11,12 +11,15 @@ class searchShow extends Component{
 				<div className="searchshowleft">
 				{
 					this.props.list.length!=0?this.props.list.map((item,index)=>{
-						return <NavLink to={"/searchlist/list/"+item.maitKey} replace key={index} onClick={this.change.bind(this)}><span>{item.title}</span></NavLink>
+						return <NavLink to={{pathname:"/searchlist/list/"+item.maitKey,p:{flag:true}}} replace key={index} onClick={this.change.bind(this)}><span>{item.title}</span></NavLink>
 					}):''
 				}
 				</div>
 				<div className="searchshowright">
+				<Switch>
 					<Route path="/searchlist/list/:id" component={SearchContent} />
+					<Redirect to={"/searchlist/list/3627"} />
+				</Switch>
 				</div>
 			</div>
 		)

@@ -3,17 +3,33 @@
 	height: 600px;
 	overflow: scroll;
 }
-.searchleft>li{
+.searchleft>ul{
+	overflow: hidden;
+}
+.searchleft>ul>li{
 	height: 113px;
 	width: 65px;
 	line-height: 45px;
 	text-align: center;
 	float: left;
 	margin-left: 20px;
-	padding-top: 24px;	
+	padding-top: 20px;	
 }
-.searchleft>li>img{
+.searchleft>ul>li>img{
 	height: 65px;
 	width: 65px;
 	border-radius: 50%;
+}
+.searchnewtitle{
+	display: flex;
+	justify-content: space-around;
+	height: 38px;
+	line-height: 38px;
+	border-top: 1px solid #CECCCD;
+	border-bottom: 1px solid #CECCCD;
+	width: 100%;
+	margin-top: 33px;
+}
+.searchleft .searchnewtitle .active{
+	color: #ef4562;
 }

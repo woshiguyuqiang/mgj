@@ -10,7 +10,7 @@ export default class List extends Component{
 	render(){
 		return(
 			<div className="list">
-				<div className="listNav">
+				<div className="listNav" ref="listnav">
 					<NavLink to="/index/home/find">发现</NavLink>
 					<NavLink to="/index/home/atta">关注</NavLink>
 					<NavLink to="/index/home/finash">流行</NavLink>
@@ -25,5 +25,18 @@ export default class List extends Component{
 				</div>
 			</div>
 		)
+	}
+	componentDidMount(){
+		let he=this.refs.listnav.offsetTop
+		document.onscroll=()=>{
+			if(document.body.scrollTop>he){
+				this.refs.listnav.style.cssText="position: fixed;top:0px;left: 0px;";
+			}else{
+				this.refs.listnav.style.position="initial"
+			}	
+		}
+	}
+	componentWillUnmount(){
+		document.onscroll=''
 	}
 }

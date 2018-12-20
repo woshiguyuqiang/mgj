@@ -6,7 +6,10 @@ import Swiper from 'swiper'
 import '../../../node_modules/swiper/dist/css/swiper.css'
 class ScrollNav extends Component{
 	constructor(props) {
-	    super(props)
+	    super(props);
+			this.state={
+				flag:true
+			}
 	}
 	render(){
 		return(
@@ -26,15 +29,20 @@ class ScrollNav extends Component{
 	}
 	componentDidMount(){
 		this.props.getDate()
-		new Swiper(this.refs.scroll, {
-				autoplay: {
-				delay: 1000
-				},
-			loop : true,
-			pagination: {
-				el: '.swiper-pagination',
-				}
-		})
+	}
+	componentWillUpdate(){
+		if(this.state.flag){
+			new Swiper(this.refs.scroll, {
+					autoplay: {
+					delay: 1000
+					},
+				loop : true,
+				pagination: {
+					el: '.swiper-pagination',
+					}
+			})
+			this.setState({flag:false})
+		}
 	}
 }
 const mapStateToProps = (state)=>({
