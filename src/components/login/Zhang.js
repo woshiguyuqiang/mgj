@@ -31,9 +31,14 @@ export default class Zhang extends Component{
 		)
 	}
 	login(){
-		localStorage.setItem("username",this.state.username)
-		alert("登录成功")
-		this.props.history.push('/index')
+		if(localStorage.getItem("username")==this.state.username){
+			localStorage.setItem("token",true)
+			alert("登录成功")
+			this.props.history.push('/index')
+		}else{
+			alert("登录失败")
+		}
+		
 	}
 	username(e){
 		this.setState({

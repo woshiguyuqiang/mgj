@@ -182,12 +182,12 @@ class GoodsList extends Component{
 		})
 	}
 	gtop(){
-		document.body.scrollTop=0
+		document.documentElement.scrollTop=0
 	}
 	componentDidMount(){
 		this.props.getData(this.props.match.params.id)
 		document.onscroll=()=>{
-			if(document.body.scrollTop>300){
+			if(document.documentElement.scrollTop>300){
 				this.refs.maxtop.style.display="block"
 				this.setState({show:true})
 			}else{

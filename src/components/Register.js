@@ -36,10 +36,10 @@ export default class Register extends Component{
 		)
 	}
 	register(){
-		/* console.log(this.state.username)
+		console.log(this.state.username)
 		localStorage.setItem("username",this.state.username)
 		alert("注册成功")
-		this.props.history.push('/index/mine') */
+		this.props.history.push('/index/mine')
 	}
 	username(e){
 		this.setState({

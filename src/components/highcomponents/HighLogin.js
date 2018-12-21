@@ -6,7 +6,7 @@ let login =(Mine,Login)=>{
 		constructor(props) {
 		    super(props)
 			this.state={
-				flag:localStorage.getItem("username")?true:false
+				flag:localStorage.getItem("username")&&localStorage.getItem("token")?true:false
 			}
 		}
 		render(){

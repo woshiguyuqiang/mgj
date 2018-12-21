@@ -38,6 +38,7 @@ export default class Mine extends Component{
 	}
 	exit(){
 		localStorage.removeItem('username')
+		localStorage.removeItem('token')
 		alert("退出成功")
 		this.props.histort.push('/index/mine/'+Math.random());
 	}
