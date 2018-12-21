@@ -213,13 +213,10 @@ class Shop extends Component{
 			})
 		})
 		var mySwiper = new Swiper('.swiper-container-shop', {
-				autoplay: {
-				delay: 1000
-				},
 			loop : true,
 			pagination: {
-				el: '.swiper-pagination-shop',
-				}
+			el: '.swiper-pagination-shop',
+			}
 		})
 	}
 	componentDidUpdate(){
@@ -227,13 +224,13 @@ class Shop extends Component{
 		this.scroll.finishPullUp()
 	}
 }
-const mapStateToProps = (state)=>({
-	list:state.home.conent
-})
-const mapDispatchToProps = (dispatch)=>({
-	getData(index){
-		asyncaction.getcontent(dispatch,index)
-	}
-})
+	const mapStateToProps = (state)=>({
+		list:state.home.conent
+	})
+	const mapDispatchToProps = (dispatch)=>({
+		getData(index){
+			asyncaction.getcontent(dispatch,index)
+		}
+	})
 
-export default connect(mapStateToProps,mapDispatchToProps)(Shop)
+	export default connect(mapStateToProps,mapDispatchToProps)(Shop)

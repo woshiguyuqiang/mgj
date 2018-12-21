@@ -15,7 +15,24 @@
 	text-align: center;
 	bottom: 58px;
 	right: 10px;
+	z-index: 999;
 }
+
+.maxtop{
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #4d4d4d;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	bottom: 58px;
+	display: none;
+	right: 10px;
+	z-index: 999;
+}
+
 .goodslhead{
 	width: 100%;
 	background-color: #fff;
@@ -129,6 +146,47 @@
 	color: #666666;
 	margin-left: 5px;
 }
+.goodsinforshow{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	display: none;
+	z-index: 2000;
+	bottom: 50px;
+	background: rgba(153,153,153,0.8);
+}
+.goodsinforshow_con{
+	position: fixed;
+	opacity: 1;
+	bottom: 0px;
+	width: 100%;
+	bottom: 0px;
+	z-index: 1099;
+	padding: 0 15px;
+	background-color: #fff;
+}
+.goodsinforshow_con>p{
+	text-align: center;
+}
+.goodsinforshow_con>p:nth-of-type(1){
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+.goodsinforshow_con>p:nth-of-type(2){
+	font-size: 15px;
+	height: 30px;
+	color: #999999;
+}
+.goodsinforshow_con li{
+	border-bottom: 1px solid #e2e2e2;
+	padding: 15px 0;
+}
+.goodsinforshow_con li>p:nth-child(2){
+	color: #999999;
+}
+
 .goodscolor{
 	margin-top: 10px;
 	height: 45px;
@@ -139,9 +197,104 @@
 	line-height: 45px;
 	justify-content: space-between;
 }
-.goodsok{
-	
+.goodcolor_head{
+	height: 84px;
+	padding-left: 15px;
+	border-top: 1px solid #dadada;
 }
+.goodcolor_head>img{
+	height: 150px;
+	width: 100px;
+	float: left;
+	margin-top: -65px;
+}
+.goodcolor_head>p{
+	float: left;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-around;
+	margin-left: 15px;
+}
+.goodcolor_head>span{
+	float: right;
+	margin-top: 10px;
+	font-size: 20px;
+}
+.goodcolor_head>p>span{
+	color: #333333;
+}
+.goodcolor_head>p>span:nth-of-type(1){
+	font-size: 25px;
+	margin-top: 8px;
+}
+.goodcolor_cho{
+	margin-top: 15px;
+}
+.goodcolor_cho>h3{
+	line-height: 23px;
+	height: 23px;
+	font-size: 14px;
+}
+.goodcolor_cho>span{
+	padding: 7px 14px;
+	margin-left: 10px;
+	display: inline-block;
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+}
+.goodcolor_cho:nth-of-type(3)>span{
+	border: 1px solid #f06782;
+	color: #f06782;
+}
+.colorgou{
+	display: flex;
+	margin-top: 15px;
+	flex-direction: column;
+}
+.colorgou>h3{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.colorgou>p>span{
+	height: 22px;
+	width: 28px;
+	float: left;
+	border-top: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	text-align: center;
+}
+.colorgou>p>button{
+	height: 22px;
+	width: 27px;
+	float: left;
+	background-color: #fff;
+	line-height: 22px;
+	border: 1px solid #bebebe;
+}
+.colorche{
+	margin-top: 15px;
+	display: flex;
+}
+#goodscolor{
+	z-index: 1000;
+}
+.colorche>span{
+	flex: 1;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.colorche>span:nth-child(1){
+	background-color: #ffe6e8;
+	color: #ff5777;
+}
+.colorche>span:nth-child(2){
+	background-color: #ff547b;
+	color: #fff;
+}
+
+
 .goodsok>ul{
 	overflow: hidden;
 	padding: 0 15px;
@@ -173,6 +326,7 @@
 .goodsfoot>li{
 	height: 48px;
 	width: 56px;
+	padding-top: 5px;
 	line-height: 48px;
 	text-align: center;
 	display: flex;
@@ -196,4 +350,88 @@
 	width: 100px;
 	background-color: #ff537c;
 	color: #ffe5ec;
+}
+
+.good-enter, .good-appear{
+    /*入场动画执行的第一个时刻*/
+	height: 0;
+}
+ 
+.good-enter-active, .good-appear-active{
+    /*入场动画执行的第二个瞬间一直到执行完成的时刻*/
+    height: 500px;
+    transition: all 300ms ease-in;
+}
+ 
+.good-enter-done{
+    /*入场动画执行完成之后*/
+    height: 500px;
+}
+ 
+ 
+/*出场动画*/
+.good-exit{
+    height: 500px;
+}
+ 
+.good-exit-active{
+    height: 0;
+    transition: all 300ms ease-in;
+}
+ 
+.good-exit-done{
+    height: 0;
+}
+
+.pingjia{
+	padding: 0 15px;
+	background-color: #fff;
+}
+.pingjia>li{
+	padding-top: 15px;
+	padding-bottom: 28px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.pingjia img{
+	height: 30px;
+	width: 30px;
+	border: 1px solid #f5f5f5;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.pingjia>li>p{
+	margin-top: 10px;
+	color: #727272;
+	font-size: 13px;
+}
+
+.maxtoph-enter, .maxtoph-appear{
+    /*入场动画执行的第一个时刻*/
+	bottom: 58px;
+}
+ 
+.maxtoph-enter-active, .maxtoph-appear-active{
+    /*入场动画执行的第二个瞬间一直到执行完成的时刻*/
+    bottom: 123px;
+    transition: all 300ms ease-in;
+}
+ 
+.maxtoph-enter-done{
+    /*入场动画执行完成之后*/
+    bottom: 123px;
+}
+ 
+ 
+/*出场动画*/
+.maxtoph-exit{
+    bottom: 123px;
+}
+ 
+.maxtoph-exit-active{
+    bottom: 58px;
+    transition: all 300ms ease-in;
+}
+ 
+.maxtoph-exit-done{
+    bottom: 58px;
 }

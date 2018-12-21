@@ -28,7 +28,7 @@ let login =(Atta)=>{
 			}
 		}
 		toLogin(){
-			this.props.history.push("/index/mine")
+			this.props.history.push("/index/mine/"+new Date().getTime())
 		}
 	}
 	return HighAtta
